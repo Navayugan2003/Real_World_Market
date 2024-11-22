@@ -1,0 +1,271 @@
+body{
+   background-color: #D6BD98 !important;
+}
+
+/* NAVIGATION BAR */
+.navigationBar{
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 0px 11px 0px;
+    background-color: #1A3636;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+/* MENU BAR */
+.menuBar{
+   display: none;
+}
+#menuBarImg{
+   height: 30px;
+   display: none;
+}
+.menuCompanyLogo{
+   height: 70px;
+   width: 200px;
+}
+.menuDetails{
+   height: 100vh;
+   width: 200px;
+   background-color: #D6BD98;
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   text-align: start;
+   top: 0;
+   left: 0;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+#cancelButton{
+   all: unset;
+   height: 30px;
+   width: 30px ;
+   border-radius: 100%;
+   cursor: pointer;
+   opacity: 0.8;
+   position: fixed;
+   top: 30% ;
+   left: 55% ;
+   display: none ;
+}
+.cancelImg{
+   height: 30px;
+}
+.menuIndividualDetails{
+   font-weight: 500;
+   color: white;
+   word-wrap: break-word;
+   padding-left: 5px !important;
+   padding-bottom: 0px !important;
+}
+.menuActionButton{
+   all: unset;
+   width: 185px;
+}
+.menuIndividualDetails > button{
+   all: unset;
+   width: 180px;
+   font-weight: 500;
+   color: white;
+   word-wrap: break-word;
+   padding-bottom: 5px;
+   padding-left: 5px
+}
+.menuLogoutButton{
+   all: unset;
+   height: 40px;
+   width: 185px;
+   font-size: larger;
+   font-weight: 500;
+}
+.menuLogoutImg{
+   height: 25px;
+}
+
+/* COMPANY LOGO */
+.companyLogo{
+   height:55px;
+}
+
+/* SEARCH BAR */
+.navigationBar > input{
+    height: 50px;
+    outline: none;
+    width: 800px;
+    border-width: 2px 0px 2px 2px;
+    border-radius: 12px 0px 0px 12px;
+ }
+.searchButton{
+   all: unset;
+   background-color: rgb(255, 255, 255);
+   border-left: none;
+   height: 48px;
+   width: 48px;
+   border-radius: 0px 12px 12px 0px;
+}
+.searchImage{
+   height: 29px;
+}
+.searchButton:active{
+   background-color: #D6BD98;
+ }
+
+ /* PROFILE SECTION */
+.profileButton{
+   all: unset;
+   display: flex;
+   position: relative;
+}
+#profileDetails{
+   position: absolute;
+   top: 55px;
+   left: 75%;
+   display: none;
+}
+.profileIcon{
+    height: 35px;
+    margin-top: 1px;
+}
+.content{
+   width: 250px;
+   background-color: rgb(64, 83, 76,0.8);
+   border-radius: 25px;
+   word-wrap: break-word;  
+}
+.logoutButton{
+   all: unset;
+   text-align: start;
+}
+.logoutImg{
+   height: 23px;
+   width: 25px;
+}
+.logout:active{
+   color: rgb(46, 46, 46);
+}
+
+/* CART SECTION */
+.cartButton{
+   all: unset;
+   display: flex;
+   position: relative;
+}
+.cartIcon{
+   height: 40px;
+   z-index: 0;
+}
+.cartCount{
+   height: 20px;
+   width: 20px;
+   text-align: center;
+   font-size: small;
+   border-radius: 100%;
+   background-image: linear-gradient(rgb(238,10,119,0.8),rgb(255,104,3,0.8));
+   position: absolute;
+   top: -11%;
+   left: 30%;
+}
+
+/* PRODUCT LISTS */
+#products{
+   margin-top: 100px;
+   padding-left: 30px;
+}
+.card{
+   margin: 10px 16px;
+   padding: 6px 5px;
+   width: 260px;
+   height: 340px !important;
+}
+.card:hover{
+   box-shadow: 0px 0px 4px 0px;
+   padding: 8px 8px;
+}
+.productImage{
+   margin-left: 10px;
+   height: 150px;
+   width: 150px !important;
+}
+.addCartButton{
+   all: unset;
+   background-color: #40534C;
+   border-radius: 10px;
+   color: white ;
+   border: none;
+   outline: none;
+   margin: -1%;
+   margin-top: -5px;
+}
+.addCartButton:active{
+   color: rgb(5, 5, 5);
+}
+.addCartButton:hover{
+   background-color: #1A3636;
+}
+/* POPUP MESSAGE */
+.addedPopMessage{
+   display: none;
+   height: 45px;
+   width: 270px;
+   padding: 5px;
+   border-radius: 15px;
+   background-color: rgb(64, 83, 76,0.8);
+   position: fixed;
+   top: 13%;
+   left: 81%;
+   z-index: 1;
+}
+@media screen and (max-width: 800px){
+   
+   .profileButton{
+      display: none;
+   }
+   .companyLogo{
+      display: none;
+   }
+   .searchBar{
+      margin-left: 50px;
+      width: 60% !important;
+   }
+   #menuBarImg{
+      display: block;
+      height: 30px !important;
+      margin: 5px 10px 5px 0px;
+      cursor: pointer;
+   }
+   .cartText{
+      display: none;
+   }
+   .cartButton{
+      margin-right: 15px;
+   }
+   .cartCount{
+      left: 60%;
+   }
+}
+
+@media screen and (max-width: 600px) {
+
+   .searchBar{
+      margin-left: 10px;
+      height: 40px !important;
+      width: 55% !important;
+   }
+   .searchButton{
+      height: 38px;
+   }
+   #menuBarImg{
+      display: block;
+      margin-top: 5px;
+      height: 28px !important;
+      cursor: pointer;
+   }
+   .addedPopMessage{
+      left: 54%;
+      height: 35px;
+      width: 150px;
+      padding: 0px;
+   }
+}

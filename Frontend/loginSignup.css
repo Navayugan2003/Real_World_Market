@@ -1,0 +1,55 @@
+/* Common Css */
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./Assets/wall3.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signinScreen>h1{
+    margin-bottom: 50px;
+}
+input{
+    height: 50px;
+    width: 250px;
+    size: 40px;
+    background-color: rgb(146, 147, 147,0);
+    border: none;
+    outline: none;
+}
+.toggleButton{
+    all: unset;
+}
+.toggleButton:active{
+    color: rgb(165, 165, 164);
+}
+input::placeholder{
+    color:#212529;
+}
+button{
+    height: 45px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+/* For SignIn Screen */
+.signinScreen{
+    height: 500px;
+    width: 450px;
+    border-radius: 25px;
+    background-color: rgba(146, 147, 147, 0.7);
+}
+
+/* For SignUp Screen */
+.signupScreen{
+    height: 500px;
+    width: 450px;
+    border-radius: 25px;
+    background-color: rgba(146, 147, 147, 0.7);
+}
+.signupHead{
+    margin-bottom: 30px;
+}
